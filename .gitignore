@@ -1,0 +1,10 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/HelloWorld/Send/bin/Debug/netcoreapp3.1
+/.vs/Examples/DesignTimeBuild
+/.vs/Examples/FileContentIndex/88aa6459-f75b-431d-b86d-e40bfeaaf2d5.vsidx
+/.vs/Examples/v17
+/.vs/ProjectEvaluation
+/HelloWorld/Send/obj/Debug/netcoreapp3.1
