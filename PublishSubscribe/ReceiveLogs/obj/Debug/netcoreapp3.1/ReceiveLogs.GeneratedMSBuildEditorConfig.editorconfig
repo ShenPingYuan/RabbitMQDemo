@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ReceiveLogs
+build_property.ProjectDir = C:\Users\HKPF1729\Downloads\331\RabbitMQ\examples\PublishSubscribe\ReceiveLogs\

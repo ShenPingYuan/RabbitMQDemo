@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "7incoI0mExBwqfAkwtrgj6fF050tXgDmHoOQZlXmsRlUSlQ4o6/mL2iyW1Dd/n4RqLVHmcQ8uiQDQTMW+2SevQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HKPF1729\\Downloads\\331\\RabbitMQ\\examples\\Routing\\EmitLogDirect\\EmitLogDirect.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HKPF1729\\.nuget\\packages\\rabbitmq.client\\6.0.0-rc1\\rabbitmq.client.6.0.0-rc1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "正在通过 “HTTP” 源“http://192.168.1.53:8085/nuget”运行“restore”操作。将来的版本中将删除非 HTTPS 访问权限。请考虑迁移到 “HTTPS” 源。"
+    }
+  ]
+}
