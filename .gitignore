@@ -8,3 +8,12 @@
 /.vs/Examples/v17
 /.vs/ProjectEvaluation
 /HelloWorld/Send/obj/Debug/netcoreapp3.1
+/HelloWorld/Send/bin/Debug/net6.0
+/HelloWorld/Send/obj/Debug/net6.0
+/HelloWorld/Send/obj/project.assets.json
+/HelloWorld/Send/obj/project.nuget.cache
+/HelloWorld/Send/obj/Send.csproj.nuget.dgspec.json
+/WorkQueue/NewTask/bin/Debug/netcoreapp3.1
+/WorkQueue/NewTask/obj/Debug/netcoreapp3.1
+/WorkQueue/Worker/bin/Debug/netcoreapp3.1
+/WorkQueue/Worker/obj/Debug/netcoreapp3.1
