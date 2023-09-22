@@ -9,7 +9,13 @@ namespace Send
     {
         static async Task Main()
         {
-            var factory = new ConnectionFactory() { HostName = "localhost", VirtualHost="fafa" };
+            var factory = new ConnectionFactory()
+            {
+                HostName = "192.168.1.63",
+                UserName = "root",
+                Password = "tsr@rabbit.mq",
+                Port = 48011,
+            };
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {

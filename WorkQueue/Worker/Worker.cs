@@ -8,8 +8,14 @@ class Worker
 {
     public static void Main()
     {
-        var factory = new ConnectionFactory() { HostName = "localhost" };
-        using(var connection = factory.CreateConnection())
+        var factory = new ConnectionFactory()
+        {
+            HostName = "192.168.1.63",
+            UserName = "root",
+            Password = "tsr@rabbit.mq",
+            Port = 48011,
+        };
+        using (var connection = factory.CreateConnection())
         using(var channel = connection.CreateModel())
         {
             channel.QueueDeclare(queue: "task_queue", durable: true, exclusive: false, autoDelete: false, arguments: null);

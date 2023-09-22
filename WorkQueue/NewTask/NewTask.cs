@@ -7,13 +7,19 @@ class NewTask
 {
     public static async Task Main(string[] args)
     {
-        var factory = new ConnectionFactory() { HostName = "localhost" };
+        var factory = new ConnectionFactory()
+        {
+            HostName = "192.168.1.63",
+            UserName = "root",
+            Password = "tsr@rabbit.mq",
+            Port = 48011,
+        };
         using (var connection = factory.CreateConnection())
         using (var channel = connection.CreateModel())
         {
             channel.QueueDeclare(queue: "task_queue", durable: true, exclusive: false, autoDelete: false, arguments: null);
 
-            var properties = channel.CreateBasicProperties();
+            IBasicProperties properties = channel.CreateBasicProperties();
             properties.Persistent = true;
 
             int counter = 0;
@@ -27,7 +33,7 @@ class NewTask
                
                 Console.WriteLine(" [x] Sent {0}", message);
 
-                await Task.Delay(TimeSpan.FromSeconds(2));
+                await Task.Delay(TimeSpan.FromSeconds(1));
             }
         }
     }
